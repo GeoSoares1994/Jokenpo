@@ -1,0 +1,133 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
+body{
+    background-image: url("");
+    background-size: cover;
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.container, .container2{
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 50vh;
+    z-index: 1;
+    border: 1px solid black;
+}
+.container2{
+    display: none;
+    background-color: white;
+  
+}
+button{
+    padding: 10px;
+    font-size: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+}
+.buttons{
+    margin: 30px 0;
+    display: flex;
+    gap: 40px;
+}
+button:hover{
+    opacity: 0.7;
+}
+#rock{
+    background-color: #F2A0A7;
+}
+#paper{
+    background-color: #455918;
+}
+#scissors{
+    background-color: #A60303;
+}
+.your-score span{
+    color: dodgerblue;
+    font-size: 35px;
+}
+.machine-score span{
+    color: deeppink;
+    font-size: 35px;
+}
+.your-score, .machine-score{
+    font-weight: bold;
+    margin: 5px 0;
+    font-size: 30px;
+}
+.result{
+    margin: 10px 0;
+    font-weight: bolder;
+}
+#video-fundo{
+    z-index: -1;
+    top: 0;
+    position: fixed;
+}
+/* .mascara {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+} */
+#button-reset{
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin: 20px auto;
+}
+#mensagem-resetar{
+    color: white;
+    background-color: black;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+}
+.gamemode{
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+}
+.gamemode select{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.gamemode button{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: dodgerblue;
+    color: white;
+    cursor: pointer;
+}
+.gamemode button:hover{
+    background-color: deepskyblue;
+}
+.gamemode button:active{
+    background-color: darkblue;
+}
+.gamemode h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: black 2px 1px 2px;
+}
