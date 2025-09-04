@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jokenpo.css">
+    <link rel="shortcut icon" type="imagex/png" href="./assets/img/jokenpo.ico">
+    <title>jokenpo</title>
+</head>
+
+<body>
+
+    <div class="gamemode">
+        
+        <h1>Selecione o modo de jogo</h1>
+        <select class="game-mode-select">
+            <option value="jogarcontramaquina">Jogar contra máquina</option>
+            <option value="jogarcontralaguem">Jogar com alguém</option>
+        </select>
+
+        <button id="select-button">Selecionar</button>
+    </div>
+
+
+    <div class="container">
+
+
+        <h1>JokenPo</h1>
+
+        <div class="buttons">
+            <button id="rock" onclick="playhuman('rock')">&#x1F44A;</button>
+            <button id="paper" onclick="playhuman('paper')">&#x270B;</button>
+            <button id="scissors" onclick="playhuman('scissors')">&#x270C;</button>
+        </div>
+
+
+        <p id="your-choice"></p>
+        <p id="machine-choice"></p>
+
+        <p class="result"></p>
+
+        <p class="your-score">Sua Pontuação: <span id="myscore">0</span></p>
+        <p class="machine-score">Pontuação da Máquina: <span id="machinescore">0</span></p>
+
+        <button onclick="Restart()" id="button-reset">Resetar partida</button>
+
+        <p id="mensagem-resetar"></p>
+
+    </div>
+
+    </div>
+
+
+</body>
+<script src="jokenpo.js"></script>
+
+
+</html>
